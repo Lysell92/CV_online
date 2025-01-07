@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Kontakt</title>
+    <style>
+        body {
+            background-color: #e6e6fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar-nav .nav-link {
+            margin-right: 15px;
+            transition: color 0.2s;
+        }
+
+            .navbar-nav .nav-link:hover {
+                color: #48390b;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Peter's CV</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hjem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Erfaringer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container p-5 my-5 text-dark" style="background-color: #c5c5f4; ">
+        <h2 class="text-end">Kontaktinformationer:</h2>
+        <p class="text-end">E-mail: lysell.nielsen@hotmail.com</p>
+        <p class="text-end">Telefonnummer: 50421853</p>
+        <p class="text-end">Bopæl: 8260 Viby J</p>
+    </div>
+    <div class="container p-5 my-5 text-dark" style="background-color: #c5c5f4;">
+        <div class="card p-4 shadow-lg">
+            <h1>Kontaktformular</h1>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Navn</label>
+                    <input type="text" class="form-control" id="name" placeholder="Dit navn">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Din e-mail">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Besked</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Din besked"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="captcha" class="form-label">Skriv svaret på 3 + 5:</label>
+                    <input type="text" class="form-control" id="captcha" placeholder="Dit svar">
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="validateCaptcha()">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer style="background-color: #e6e6fa; color: black;" class="text-end py-3 mt-5">
+        <p>Online CV</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
