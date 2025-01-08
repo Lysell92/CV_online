@@ -1,6 +1,6 @@
 ﻿function validateCaptcha() {
     var captchaInput = document.getElementById('captcha').value;
-    var correctAnswer = 5; // The correct answer to 2 + 3
+    var correctAnswer = 8;
 
     if (parseInt(captchaInput) === correctAnswer) {
         alert("Formularen er valideret. (Formularen sender ikke data).");
